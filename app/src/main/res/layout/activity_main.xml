@@ -1,0 +1,95 @@
+<!-- res/layout/activity_login.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synthwave Chat"
+        android:textSize="30sp"
+        android:textColor="@color/neon_pink"
+        android:fontFamily="@font/orbitron"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:shadowColor="@color/neon_blue"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+
+    <ImageView
+        android:id="@+id/ivSynthwaveLogo"
+        android:layout_width="252dp"
+        android:layout_height="217dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/synthwave" />
+
+    <!-- Campo de Email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:fontFamily="@font/orbitron"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:fontFamily="@font/orbitron"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword" />
+
+    <!-- Botón de Login -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/black"
+        android:background="@drawable/neon_button_bg"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Enlace para Registrarse -->
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Regístrate"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/neon_pink"
+        android:layout_gravity="center_horizontal"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:shadowColor="@color/neon_blue"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<!-- res/menu/menu_main.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navChats"
+        android:icon="@drawable/chat"
+        android:title="Chats" />
+    <item
+        android:id="@+id/navContacts"
+        android:icon="@drawable/contacts"
+        android:title="Contactos" />
+    <item
+        android:id="@+id/navProfile"
+        android:icon="@drawable/account"
+        android:title="Perfil" />
+
+
+
+</menu>

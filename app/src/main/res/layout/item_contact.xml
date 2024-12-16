@@ -1,0 +1,61 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Foto de perfil -->
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/neo_button"
+        android:contentDescription="Foto de perfil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvContactName"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Nickname del contacto -->
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:text="Nombre del Contacto"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivProfileImage"
+        app:layout_constraintEnd_toStartOf="@id/ivChatIcon"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <!-- Icono de mensaje -->
+    <ImageView
+        android:id="@+id/ivChatIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="Iniciar chat"
+        android:src="@drawable/chat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Correo electrónico del contacto -->
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:text="Correo electrónico"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvContactName"
+        app:layout_constraintStart_toEndOf="@id/ivProfileImage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

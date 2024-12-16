@@ -1,0 +1,99 @@
+<!-- res/layout/activity_register.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitleRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Cuenta"
+        android:textSize="30sp"
+        android:textColor="@color/neon_pink"
+        android:fontFamily="@font/orbitron"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/ivSynthwaveLogoRegister"
+        android:layout_width="252dp"
+        android:layout_height="217dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/synthwave" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Completo"
+        android:fontFamily="@font/orbitron"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Campo de Email -->
+    <EditText
+        android:id="@+id/etEmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:fontFamily="@font/orbitron"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Campo de Contraseña -->
+    <EditText
+        android:id="@+id/etPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:fontFamily="@font/orbitron"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword" />
+
+    <!-- Confirmar Contraseña -->
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar Contraseña"
+        android:fontFamily="@font/orbitron"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword" />
+
+    <!-- Botón de Registro -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:text="Crear Cuenta"
+        android:textColor="@color/black"
+        android:background="@drawable/neon_button_bg"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Enlace para Iniciar Sesión -->
+    <TextView
+        android:id="@+id/tvLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:text="¿Ya tienes cuenta? Inicia sesión"
+        android:textColor="@color/neon_pink"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

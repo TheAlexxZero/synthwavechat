@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado presionado -->
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/neon_pink"/> <!-- Color de fondo cuando está presionado -->
+            <corners android:radius="10dp"/>
+            <stroke android:color="@color/neon_blue" android:width="2dp"/>
+        </shape>
+    </item>
+
+    <!-- Estado normal -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/neon_blue"/> <!-- Color de fondo por defecto -->
+            <corners android:radius="10dp"/>
+            <stroke android:color="@color/neon_pink" android:width="2dp"/>
+        </shape>
+    </item>
+</selector>

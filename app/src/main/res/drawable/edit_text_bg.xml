@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado enfocado (cuando el usuario está escribiendo) -->
+    <item android:state_focused="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/neon_pink"/>
+            <corners android:radius="8dp"/>
+            <stroke android:color="@color/neon_blue" android:width="2dp"/>
+        </shape>
+    </item>
+
+    <!-- Estado normal -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/black"/>
+            <corners android:radius="8dp"/>
+            <stroke android:color="@color/neon_pink" android:width="2dp"/>
+        </shape>
+    </item>
+</selector>

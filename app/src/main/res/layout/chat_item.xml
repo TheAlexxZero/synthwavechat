@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@android:color/transparent">
+
+    <!-- Imagen de perfil del usuario -->
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/synthwave"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circular_background" />
+
+    <!-- Contenedor para nickname y mensaje -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nickname del usuario -->
+        <TextView
+            android:id="@+id/tvNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nickname"
+            android:textColor="@color/neon_purple"
+            android:textSize="14sp"
+            android:fontFamily="@font/orbitron"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Mensaje del usuario -->
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:text="Este es un mensaje de prueba"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/chat_bubble"
+            android:padding="8dp" />
+    </LinearLayout>
+</LinearLayout>
